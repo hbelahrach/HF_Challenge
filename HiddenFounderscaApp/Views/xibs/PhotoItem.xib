@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PhotoItem" customModule="HiddenFounderscaApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="264" height="208"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="W3C-bj-oo0">
+                    <rect key="frame" x="0.0" y="0.0" width="264" height="208"/>
+                </imageView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oaK-Iy-Hfk">
+                    <rect key="frame" x="239" y="-15" width="40" height="40"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="firebase" translatesAutoresizingMaskIntoConstraints="NO" id="8Kr-OP-ltU">
+                            <rect key="frame" x="5" y="5" width="30" height="30"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="8Kr-OP-ltU" firstAttribute="leading" secondItem="oaK-Iy-Hfk" secondAttribute="leading" constant="5" id="2T2-Lo-xG3"/>
+                        <constraint firstAttribute="width" constant="40" id="300-sY-bnN"/>
+                        <constraint firstAttribute="height" constant="40" id="HNS-eV-NJB"/>
+                        <constraint firstItem="8Kr-OP-ltU" firstAttribute="top" secondItem="oaK-Iy-Hfk" secondAttribute="top" constant="5" id="Vo1-WV-b3q"/>
+                        <constraint firstAttribute="bottom" secondItem="8Kr-OP-ltU" secondAttribute="bottom" constant="5" id="YZC-Yq-efM"/>
+                        <constraint firstAttribute="trailing" secondItem="8Kr-OP-ltU" secondAttribute="trailing" constant="5" id="qP1-3b-ITC"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="W3C-bj-oo0" secondAttribute="bottom" id="5pI-RJ-cPH"/>
+                <constraint firstItem="W3C-bj-oo0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="QQt-9a-hhT"/>
+                <constraint firstAttribute="trailing" secondItem="W3C-bj-oo0" secondAttribute="trailing" id="Qii-oR-oqy"/>
+                <constraint firstItem="oaK-Iy-Hfk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="-15" id="krA-7p-vwg"/>
+                <constraint firstAttribute="trailing" secondItem="oaK-Iy-Hfk" secondAttribute="trailing" constant="-15" id="rE9-0z-0Tc"/>
+                <constraint firstItem="W3C-bj-oo0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="zIc-7M-mX7"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="checkView" destination="oaK-Iy-Hfk" id="vgJ-3k-5iu"/>
+                <outlet property="image" destination="W3C-bj-oo0" id="OXw-Ij-uyG"/>
+            </connections>
+            <point key="canvasLocation" x="-44" y="-566"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="firebase" width="180" height="180"/>
+    </resources>
+</document>
